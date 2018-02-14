@@ -17,7 +17,7 @@ function publishTime()
 		mqttspy.publish("tp1112", currentTime, 0, false);
 		mqttspy.publish("tp1113", currentTime, 0, false);
 
-		// Sleep for 1 second and handle a stop request 
+		// Rate in milliseconds.
 		try 
 		{
 			Thread.sleep(1000);				
