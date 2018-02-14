@@ -1,3 +1,5 @@
+// Publish the time every second.
+
 function publishTime()
 {
 	var Thread = Java.type("java.lang.Thread");
@@ -18,7 +20,7 @@ function publishTime()
 		// Sleep for 1 second and handle a stop request 
 		try 
 		{
-			Thread.sleep(10);				
+			Thread.sleep(1000);				
 		}
 		catch(err) 
 		{
