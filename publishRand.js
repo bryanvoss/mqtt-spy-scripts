@@ -1,14 +1,16 @@
+// Generate random-sized messages, up to 65535 characters.
+
 function publishRand()
 {
 	var Thread = Java.type("java.lang.Thread");
 
 	while (true)
 	{
-		mqttspy.publish("tp1111", randString(Math.random() * 65536), 0, false);
-		mqttspy.publish("tp1112", randString(Math.random() * 65536), 0, false);
-		mqttspy.publish("tp1113", randString(Math.random() * 65536), 0, false);
+		mqttspy.publish("tp1111", randString(Math.random() * 65535), 0, false);
+		mqttspy.publish("tp1112", randString(Math.random() * 65535), 0, false);
+		mqttspy.publish("tp1113", randString(Math.random() * 65535), 0, false);
 
-		// Sleep for 1 second and handle a stop request 
+		// Sleep for 10 milliseconds and handle a stop request 
 		try 
 		{
 			Thread.sleep(10);				
