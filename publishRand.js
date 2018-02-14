@@ -10,7 +10,7 @@ function publishRand()
 		mqttspy.publish("tp1112", randString(Math.random() * 65535), 0, false);
 		mqttspy.publish("tp1113", randString(Math.random() * 65535), 0, false);
 
-		// Sleep for 10 milliseconds and handle a stop request 
+		// Rate in milliseconds.
 		try 
 		{
 			Thread.sleep(10);				
